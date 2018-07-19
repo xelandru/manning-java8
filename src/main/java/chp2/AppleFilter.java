@@ -17,4 +17,14 @@ public class AppleFilter {
         }
         return result;
     }
+
+    public static void main(String[] args) {
+
+        List<Apple> redApples = filterApples(new ArrayList<>(), new ApplePredicate() {
+            @Override
+            public boolean test(Apple apple) {
+                return "red".equals(apple.getColor());
+            }
+        });
+    }
 }
