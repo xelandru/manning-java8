@@ -5,9 +5,9 @@ import java.util.List;
 
 public class PrintApple {
 
-    public static void prettyPrintApple(List<Apple> inventory, ApplePredicate p) {
+    public static void prettyPrintApple(List<Apple> inventory, AppleFormatter formatter) {
         for (Apple apple:inventory) {
-            String output = "";
+            String output = formatter.display(apple);
             System.out.println(output);
         }
     }
