@@ -12,7 +12,7 @@ public class NumberFrequency {
         Map<Integer, Long> frequency = Arrays
                 .stream(numbers)
                 .boxed()
-                .collect(new NumberFrequencyCollector<>());
+                .collect(new ItemFrequencyCollector<>());
 
         System.out.println(frequency);
     }

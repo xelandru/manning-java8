@@ -10,7 +10,7 @@ import java.util.stream.Collector;
 
 import static java.util.stream.Collector.Characteristics.*;
 
-public class NumberFrequencyCollector<T extends Number> implements Collector<T, Map<T, Long>, Map<T, Long>> {
+public class ItemFrequencyCollector<T> implements Collector<T, Map<T, Long>, Map<T, Long>> {
 
     @Override
     public Supplier<Map<T, Long>> supplier() {
